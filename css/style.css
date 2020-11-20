@@ -35,9 +35,9 @@
   padding: 30px;
 }
 
-#lezioni .container > h2,
-#steps .container > h2,
-#why .container > h2 {
+#lezioni .container h2,
+#steps .container h2,
+#why .container h2 {
   font-size: 2em;
 }
 
@@ -50,10 +50,6 @@
 #why .container > .second h3,
 #why .container > .third h3 {
   margin: 10px 0;
-}
-
-#why .container hr {
-  margin-top: 40px;
 }
 
 /* Versione Tablet */
@@ -73,6 +69,10 @@
   #steps .container img,
   #why .container img {
     height: 140px;
+  }
+
+  #why .container hr {
+    margin-top: 40px;
   }
 }
 /* end Versione Tablet */
