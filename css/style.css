@@ -1,104 +1,67 @@
-.row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
-/* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-}
-
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#lezioni {
-  text-align: center;
-}
-
-/* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
-}
-
-#steps {
-  text-align: center;
-}
-
-/* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
-
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 100%;
-  margin-top: 80px;
-}
-
-#why .row img {
-  background-color: #428bca;
-  border-radius: 50%;
-  padding: 30px
-}
-
 /* COMMON */
-.row::after {
-  content: '';
-  display: table;
-  clear: both;
+.container {
+  margin: 100px auto;
 }
 
-.container.grey {
+.grey {
   background-color: #f9f9f9;
 }
 
-img {
+.centered-text {
+  text-align: center;
+}
+/* end COMMON */
+
+#lezioni .container > .first,
+#lezioni .container > .second,
+#steps .container > .first,
+#steps .container > .second,
+#steps .container > .third,
+#why .container > .first,
+#why .container > .second,
+#why .container > .third {
+  margin-top: 40px;
+}
+
+#lezioni .container img,
+#steps .container img,
+#why .container img {
   height: 200px;
 }
 
-.clear {
-  clear: both;
+#why .container img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
 }
+
+#lezioni .container > h2,
+#steps .container > h2,
+#why .container > h2 {
+  font-size: 2em;
+}
+
+#lezioni .container > .first h3,
+#lezioni .container > .second h3,
+#steps .container > .first h3,
+#steps .container > .second h3,
+#steps .container > .third h3,
+#why .container > .first h3,
+#why .container > .second h3,
+#why .container > .third h3 {
+  margin: 10px 0;
+}
+
+#why .container hr {
+  margin-top: 40px;
+}
+
+/* Versione Tablet */
+
+
+/* end Versione Tablet */
 
 /* Versione Mobile */
-@media screen and (max-width: 420px) {
-  .container {
-    padding: 15px;
-  }
 
-  .row,
-  #lezioni .row > .left,
-  #lezioni .row > .right,
-  #steps .row > .left,
-  #steps .row > .central,
-  #steps .row > .right {
-    width: 100%;
-  }
 
-  #lezioni .row > .left,
-  #steps .row > .left,
-  #steps .row > .central {
-    margin-bottom: 50px;
-  }
-
-  img {
-    height: 70px;
-  }
-
-  hr {
-    margin-top: 30px;
-  }
-}
 /* end Versione Mobile */
