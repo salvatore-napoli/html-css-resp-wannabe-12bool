@@ -57,8 +57,24 @@
 }
 
 /* Versione Tablet */
+@media screen and (max-width: 991px) {
+  #lezioni .container > .first,
+  #lezioni .container > .second,
+  #steps .container > .first,
+  #steps .container > .second,
+  #steps .container > .third,
+  #why .container > .first,
+  #why .container > .second,
+  #why .container > .third {
+    padding: 0 30px;
+  }
 
-
+  #lezioni .container img,
+  #steps .container img,
+  #why .container img {
+    height: 140px;
+  }
+}
 /* end Versione Tablet */
 
 /* Versione Mobile */
