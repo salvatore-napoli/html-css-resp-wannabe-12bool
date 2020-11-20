@@ -78,6 +78,15 @@
 /* end Versione Tablet */
 
 /* Versione Mobile */
+@media screen and (max-width: 767px) {
+  #lezioni .container img,
+  #steps .container img,
+  #why .container img {
+    height: 90px;
+  }
 
-
+  #why .container img {
+    padding: 20px;
+  }
+}
 /* end Versione Mobile */
